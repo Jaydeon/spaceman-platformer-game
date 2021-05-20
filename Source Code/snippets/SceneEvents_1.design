@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="5" y="15">
+            <group eventID="1" id="-1"/>
+        </init>
+    </group>
+    <group eventID="1" id="1">
+        <display-dialog5 comment="false" x="26" y="103">
+            <int id="0" val="Start"/>
+        </display-dialog5>
+    </group>
+    <group eventID="1" id="2">
+        <display-dialog comment="false" x="210" y="45">
+            <int id="0" val="#Intro"/>
+        </display-dialog>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-actor-screen comment="false" x="574" y="8">
+            <group eventID="2" id="-1"/>
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="0"/>
+        </event-actor-screen>
+    </group>
+    <group eventID="2" id="1">
+        <display-dialog comment="false" x="29" y="106">
+            <int id="0" val="#Intro"/>
+        </display-dialog>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

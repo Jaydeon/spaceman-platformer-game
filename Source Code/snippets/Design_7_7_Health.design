@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <set-val-7-3 comment="false" x="37" y="77">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-7-3>
+                        <dolater comment="false" x="37" y="102">
+                            <group eventID="1" id="-1">
+                                <set-val-7-3 comment="false" x="48" y="129">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-7-3>
+                            </group>
+                            <int id="0" val="2"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                        <incdec comment="false" x="37" y="166">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <die comment="false" x="37" y="193">
+                            <get-item comment="false" id="0" x="0" y="0">
+                                <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <length-list comment="false" id="0" x="0" y="0">
+                                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                                    </length-list>
+                                    <int id="1" val="1"/>
+                                </minus>
+                            </get-item>
+                        </die>
+                        <remove-index comment="false" x="37" y="240">
+                            <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <length-list comment="false" id="0" x="0" y="0">
+                                    <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                                </length-list>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </remove-index>
+                        <if comment="false" x="37" y="275">
+                            <group eventID="1" id="-1">
+                                <scene-reload-color comment="false" x="48" y="305">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val=".5"/>
+                                    <color b="0" g="0" id="2" r="0"/>
+                                    <int id="3" val="0"/>
+                                    <int id="4" val=".5"/>
+                                    <color b="0" g="0" id="5" r="0"/>
+                                </scene-reload-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-7-3 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <actortype eid="2" id="0"/>
+            <actortype eid="8" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-7-2 comment="false" x="26" y="40">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-7-2>
+                <set-val-7-4 comment="false" x="26" y="65">
+                    <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-7-4>
+                <repeat comment="false" x="26" y="90">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="37" y="115">
+                            <actortype eid="12" id="0"/>
+                            <times comment="false" id="1" x="0" y="0">
+                                <loopindex comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="32"/>
+                            </times>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <anchor-screen comment="false" x="37" y="152">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </anchor-screen>
+                        <actor-enabledisable-snippet comment="false" x="37" y="179">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Life Pickupp"/>
+                        </actor-enabledisable-snippet>
+                        <add-list comment="false" x="37" y="206">
+                            <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </add-list>
+                    </group>
+                    <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                </repeat>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1">
+        <plus comment="false" x="223" y="316">
+            <minus comment="false" id="0" x="0" y="0">
+                <screen-xy comment="false" id="0" x="0" y="0">
+                    <int id="0" val="2"/>
+                </screen-xy>
+                <div comment="false" id="1" x="0" y="0">
+                    <screen-wh comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </screen-wh>
+                    <int id="1" val="2"/>
+                </div>
+            </minus>
+            <int id="1" val=""/>
+        </plus>
+        <minus comment="false" x="465" y="227">
+            <screen-xy comment="false" id="0" x="0" y="0">
+                <int id="0" val="3"/>
+            </screen-xy>
+            <div comment="false" id="1" x="0" y="0">
+                <screen-wh comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                </screen-wh>
+                <int id="1" val="2"/>
+            </div>
+        </minus>
+    </group>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <incdec comment="false" x="37" y="70">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <create-actor3 comment="false" x="37" y="97">
+                            <actortype eid="12" id="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <get-item comment="false" id="0" x="0" y="0">
+                                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                                        <plus comment="false" id="1" x="0" y="0">
+                                            <length-list comment="false" id="0" x="0" y="0">
+                                                <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                                            </length-list>
+                                            <int id="1" val="0"/>
+                                        </plus>
+                                    </get-item>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <int id="1" val="32"/>
+                            </plus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-xy comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="3"/>
+                                </screen-xy>
+                                <div comment="false" id="1" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                            </minus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <anchor-screen comment="false" x="37" y="162">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </anchor-screen>
+                        <actor-enabledisable-snippet comment="false" x="37" y="189">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Life Pickupp"/>
+                        </actor-enabledisable-snippet>
+                        <add-list comment="false" x="37" y="216">
+                            <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </add-list>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-7-4 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <int id="0" val="increase_Lifepoints"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="1">
+        <get-val-7-5 comment="false" x="234" y="273"/>
+    </group>
+    <group eventID="3" id="-1">
+        <plus comment="false" x="198" y="357">
+            <minus comment="false" id="0" x="0" y="0">
+                <screen-xy comment="false" id="0" x="0" y="0">
+                    <int id="0" val="2"/>
+                </screen-xy>
+                <div comment="false" id="1" x="0" y="0">
+                    <screen-wh comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </screen-wh>
+                    <int id="1" val="2"/>
+                </div>
+            </minus>
+            <int id="1" val=""/>
+        </plus>
+        <times comment="false" x="450" y="217">
+            <int id="0" val=""/>
+            <int id="1" val="32"/>
+        </times>
+        <minus comment="false" x="286" y="331">
+            <int id="0" val=""/>
+            <int id="1" val="32"/>
+        </minus>
+    </group>
+</groups>

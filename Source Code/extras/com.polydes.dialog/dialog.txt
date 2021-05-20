@@ -1,0 +1,61 @@
+#-Info-
+
+//comments are inside two pairs of double-slashes//
+using special symbols in dialog:
+\< = <
+\> = >
+\$ = $
+\\ = \
+
+#Start
+
+Hey, hey, hey, kids!! It's Krusty the Klown!<but><br>
+Kome on down to Krusty Burger for the new, limited-time only, KOW-DOG-LOBSTER BURGER!!!<but><end>
+
+#Slime
+
+<showname "Jimmy">
+There's one of the slimes!<bc>
+Hey, you! Why are you trying to take over my planet?!<bc>
+<showname "Slime">
+...<bc>
+<showname "Jimmy">
+...Okay then. I have to be careful, <wait 0.4>they can shoot slimeballs... <wait 0.8>and those hurt!<but><end>
+
+#Hurt
+
+<showname "Jimmy">
+Ouch, <wait 0.4>that wasn't really fair... <wait 0.4><bc>
+Hey, pick up that heart!<but><end>
+
+#Intro
+
+<showname "Jimmy">
+This has gone on for too long... I have to stop them from taking my home. Where are they even coming from? <br>
+You can use D to continue, by the way. <bc>
+Alright, cool! Let's get going then. <bc>
+Use the arrow keys to move and jump. <but><end>
+
+#Heart
+
+<showname "Jimmy">
+Much better!<bc>
+Those refill health, and health is important, because if I run out, I'll die... No pressure.<but><end>
+
+#Gamejar
+
+<showname "Jimmy">
+What the scallop? This isn't my home...<bc>
+<showname "Took Nook">
+You took it, you nooking took it! Feel my wrath!<bc>
+<showname "Jimmy">
+Nani?!<but><end>
+
+#Touch Nook
+
+<showname "Shook Nook">
+Fuck you! That wasn't even my final form!<bc>
+You can't escape me now!<bc>
+<hidename>
+<shake>You've met a terrible fate, haven't you?<shake><but><end>
+

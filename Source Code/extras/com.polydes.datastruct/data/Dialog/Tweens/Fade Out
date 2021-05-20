@@ -1,0 +1,5 @@
+struct_id=5
+struct_type=Tween
+duration=500
+opacityStart=1.0
+opacityStop=0.0

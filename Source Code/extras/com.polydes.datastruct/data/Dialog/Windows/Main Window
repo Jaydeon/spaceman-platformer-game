@@ -1,0 +1,11 @@
+struct_id=1
+struct_type=Window
+position=[25,395]
+image=2
+createTween=4
+destroyTween=4
+scaleWidth=Custom
+scaleWidthSize=590
+scaleHeight=Custom
+scaleHeightSize=45
+insets=[12, 12, 12, 12]

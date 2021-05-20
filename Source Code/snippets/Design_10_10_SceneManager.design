@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-type-screen comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-10-2 comment="false" x="26" y="47">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                </set-val-10-2>
+                <die comment="false" x="26" y="79">
+                    <actor-entered-exited comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <actortype eid="8" id="0"/>
+            <int id="1" val="1"/>
+            <int id="2" val="1"/>
+        </event-type-screen>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <die comment="false" x="26" y="47">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <actortype eid="8" id="0"/>
+            <actortype eid="2" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortoactor comment="false" x="13" y="14">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="24" y="46">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Shook"/>
+                </setanim>
+                <actor-enabledisable-snippet comment="false" x="24" y="78">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="Slime Behavior Copy"/>
+                </actor-enabledisable-snippet>
+                <display-dialog3 comment="false" x="24" y="110">
+                    <int id="0" val="Touch Nook"/>
+                    <int id="1" val="Style"/>
+                </display-dialog3>
+                <pause-unpause comment="false" x="24" y="130">
+                    <int id="0" val="0"/>
+                </pause-unpause>
+                <set-volume comment="false" x="24" y="157">
+                    <int id="0" val="100"/>
+                </set-volume>
+            </group>
+            <ACTOR eid="var" id="0" vid="2"/>
+            <ACTOR eid="2" id="1"/>
+        </event-collide-actortoactor>
+    </group>
+    <group eventID="1" id="1">
+        <if comment="false" x="152" y="188">
+            <group eventID="1" id="-1">
+                <pause-unpause comment="false" x="163" y="221">
+                    <int id="0" val="1"/>
+                </pause-unpause>
+            </group>
+            <keystate comment="false" id="0" x="0" y="0">
+                <int id="0" val="1"/>
+                <control eid="12" id="1"/>
+            </keystate>
+        </if>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-24-2 comment="false" x="26" y="40">
+                    <ACTOR eid="1" id="0"/>
+                </set-val-24-2>
+                <dolater comment="false" x="26" y="67">
+                    <group eventID="2" id="-1">
+                        <display-dialog3 comment="false" x="37" y="94">
+                            <int id="0" val="Gamejar"/>
+                            <int id="1" val="Style"/>
+                        </display-dialog3>
+                    </group>
+                    <int id="0" val=".5"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <set-volume comment="false" x="26" y="126">
+                    <int id="0" val="20"/>
+                </set-volume>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="1">
+        <setanim comment="false" x="143" y="229">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="Scared"/>
+        </setanim>
+    </group>
+    <group eventID="2" id="-1">
+        <get-val-24-1 comment="false" x="244" y="135"/>
+    </group>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1"/>
+        </draw>
+    </group>
+    <group eventID="3" id="1">
+        <setanim comment="false" x="118" y="166">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="Scared"/>
+        </setanim>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-key-press-release comment="false" x="15" y="17">
+            <group eventID="5" id="-1">
+                <create-actor3 comment="false" x="26" y="44">
+                    <actortype eid="29" id="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="1" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="1" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <fadeInOut comment="false" x="26" y="84">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <fadeInOut comment="false" x="26" y="111">
+                    <ACTOR eid="var" id="0" vid="2"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <set-val-24-2 comment="false" x="26" y="138">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-24-2>
+                <fadeInOut comment="false" x="26" y="165">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+            </group>
+            <control eid="9" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="5" id="1">
+        <setanim comment="false" x="127" y="178">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="Bruce"/>
+        </setanim>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <create-actor3 comment="false" x="26" y="42">
+                    <actortype eid="31" id="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="1" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="1" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <fadeInOut comment="false" x="26" y="82">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <fadeInOut comment="false" x="26" y="109">
+                    <ACTOR eid="var" id="0" vid="2"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <set-val-24-2 comment="false" x="26" y="136">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-24-2>
+                <fadeInOut comment="false" x="26" y="163">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+            </group>
+            <control eid="10" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="6" id="1">
+        <setanim comment="false" x="53" y="101">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="Ari"/>
+        </setanim>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <setanim comment="false" x="202" y="104">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="OG"/>
+        </setanim>
+    </group>
+    <group eventID="7" id="1">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <create-actor3 comment="false" x="26" y="42">
+                    <actortype eid="33" id="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="1" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="1" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <fadeInOut comment="false" x="26" y="82">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <fadeInOut comment="false" x="26" y="109">
+                    <ACTOR eid="var" id="0" vid="2"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+                <set-val-24-2 comment="false" x="26" y="136">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-24-2>
+                <fadeInOut comment="false" x="26" y="163">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val=".5"/>
+                    <int id="3" val="0"/>
+                </fadeInOut>
+            </group>
+            <control eid="11" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="7" id="2">
+        <fadeTo comment="false" x="79" y="265">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+            <int id="3" val="0"/>
+        </fadeTo>
+        <die comment="false" x="79" y="292">
+            <ACTOR eid="1" id="0"/>
+        </die>
+        <fadeInOut comment="false" x="79" y="319">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val=""/>
+            <int id="3" val="0"/>
+        </fadeInOut>
+    </group>
+    <group eventID="7" id="3">
+        <setanim comment="false" x="64" y="94">
+            <ACTOR eid="1" id="0"/>
+            <int id="1" val="Bruce"/>
+        </setanim>
+    </group>
+    <group eventID="7" id="-1">
+        <getdir comment="false" x="424" y="309">
+            <ACTOR eid="lastcreated" id="0"/>
+        </getdir>
+    </group>
+</groups>

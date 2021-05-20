@@ -1,0 +1,7 @@
+struct_id=2
+struct_type=ScalingImage
+image=basyk
+origin=[0,0]
+type=Stretch Image
+part=Inside Border
+border=[5,5]

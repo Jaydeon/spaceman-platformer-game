@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="49" y="63">
+            <group eventID="1" id="-1">
+                <if comment="false" x="60" y="88">
+                    <group eventID="1" id="-1">
+                        <scaleTo comment="false" x="71" y="131">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                        <set-val-5-10 comment="false" x="71" y="158">
+                            <int id="0" val="100"/>
+                        </set-val-5-10>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <get-val-5-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                    </less>
+                </if>
+                <else comment="false" x="60" y="190">
+                    <group eventID="1" id="-1">
+                        <scaleTo comment="false" x="71" y="210">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="-100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                        <set-val-5-10 comment="false" x="71" y="237">
+                            <int id="0" val="-100"/>
+                        </set-val-5-10>
+                    </group>
+                </else>
+                <if comment="false" x="60" y="269">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="71" y="299">
+                            <group eventID="1" id="-1">
+                                <create-actor3 comment="false" x="82" y="352">
+                                    <actortype eid="var" id="0" vid="8"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                    <int id="3" val="2"/>
+                                </create-actor3>
+                                <scaleTo comment="false" x="82" y="392">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <get-val-5-10 comment="false" id="1" x="0" y="0"/>
+                                    <int id="2" val="100"/>
+                                    <int id="3" val="0"/>
+                                    <int id="4" val="0"/>
+                                </scaleTo>
+                                <if comment="false" x="82" y="424">
+                                    <group eventID="1" id="-1">
+                                        <set-xy comment="false" x="93" y="454">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-wh comment="false" id="1" x="0" y="0">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-wh>
+                                            </plus>
+                                        </set-xy>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-5-10 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="-100"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="82" y="511">
+                                    <group eventID="1" id="-1">
+                                        <set-xy comment="false" x="93" y="541">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-wh comment="false" id="1" x="0" y="0">
+                                                    <ACTOR eid="lastcreated" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-wh>
+                                            </minus>
+                                        </set-xy>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-5-10 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="100"/>
+                                    </eq>
+                                </if>
+                                <set-xy comment="false" x="82" y="598">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                        <plus comment="false" id="1" x="0" y="0">
+                                            <get-wh comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="lastcreated" id="0"/>
+                                                <int id="1" val="3"/>
+                                            </get-wh>
+                                            <get-val-5-9 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                    </minus>
+                                </set-xy>
+                                <if comment="false" x="82" y="648">
+                                    <group eventID="1" id="-1">
+                                        <push-shove comment="false" x="93" y="678">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="1"/>
+                                            <int id="3" val="0"/>
+                                            <int id="4" val="30"/>
+                                        </push-shove>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-val-5-10 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="-100"/>
+                                    </eq>
+                                </if>
+                                <else comment="false" x="82" y="717">
+                                    <group eventID="1" id="-1">
+                                        <push-shove comment="false" x="93" y="737">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="-1"/>
+                                            <int id="3" val="0"/>
+                                            <int id="4" val="30"/>
+                                        </push-shove>
+                                    </group>
+                                </else>
+                                <set-val-5-2 comment="false" x="82" y="776">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-5-2>
+                                <dolater comment="false" x="82" y="801">
+                                    <group eventID="1" id="-1">
+                                        <set-val-5-2 comment="false" x="93" y="828">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-5-2>
+                                    </group>
+                                    <int id="0" val="5"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                                <setanim comment="false" x="82" y="865">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-5-4 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                                <dolater comment="false" x="82" y="897">
+                                    <group eventID="1" id="-1">
+                                        <setanim comment="false" x="93" y="942">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-5-5 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                    </group>
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <get-num-frames comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </get-num-frames>
+                                        <int id="1" val=".5"/>
+                                    </times>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <lesseq comment="false" id="0" x="0" y="0">
+                                    <abs comment="false" id="0" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="var" id="0" vid="1"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-xy comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                        </minus>
+                                    </abs>
+                                    <get-val-5-11 comment="false" id="1" x="0" y="0"/>
+                                </lesseq>
+                                <eq comment="false" id="1" x="0" y="0">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <get-wh comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                        </get-wh>
+                                    </plus>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <get-wh comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                        </get-wh>
+                                    </plus>
+                                </eq>
+                            </and>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-5-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+                <set-xy comment="false" x="60" y="1010">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <get-val-5-7 comment="false" id="2" x="0" y="0"/>
+                </set-xy>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1">
+        <get-wh comment="false" x="1368" y="549">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </get-wh>
+        <get-wh comment="false" x="422" y="558">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="2"/>
+        </get-wh>
+        <div comment="false" x="575" y="497">
+            <int id="0" val=""/>
+            <int id="1" val="2"/>
+        </div>
+        <div comment="false" x="609" y="448">
+            <int id="0" val=""/>
+            <int id="1" val="2"/>
+        </div>
+        <plus comment="false" x="194" y="498">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+        </plus>
+    </group>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-5-7 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-val-5-7>
+                <set-val-5-1 comment="false" x="26" y="73">
+                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Scene Manager"/>
+                        <int id="1" val="_PlayerActor"/>
+                    </scene-get-attribute>
+                </set-val-5-1>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="-12"/>
+                </set-dxy>
+                <scaleTo comment="false" x="26" y="67">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="100"/>
+                    <int id="2" val="100"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="0"/>
+                </scaleTo>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="1">
+        <if comment="false" x="452" y="178">
+            <group eventID="1" id="-1">
+                <if comment="false" x="463" y="226">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="474" y="259">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="-12"/>
+                        </set-dxy>
+                        <scaleTo comment="false" x="474" y="286">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="-100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                        <if comment="false" x="474" y="313">
+                            <group eventID="1" id="-1">
+                                <setanim comment="false" x="485" y="343">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-33-4 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-33-2 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="2" id="1"/>
+                    </keystate>
+                </if>
+                <else-if comment="false" x="463" y="399">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="474" y="432">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="12"/>
+                        </set-dxy>
+                        <scaleTo comment="false" x="474" y="459">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                        <if comment="false" x="474" y="486">
+                            <group eventID="1" id="-1">
+                                <setanim comment="false" x="485" y="516">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-33-4 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-33-2 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="3" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="463" y="572">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="474" y="602">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <setanim comment="false" x="474" y="629">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-33-5 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-33-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </else-if>
+            </group>
+            <and comment="false" id="0" x="0" y="0">
+                <moreeq comment="false" id="0" x="0" y="0">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <int id="1" val="0"/>
+                </moreeq>
+                <lesseq comment="false" id="1" x="0" y="0">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-wh>
+                    </plus>
+                    <scene-wh comment="false" id="1" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </scene-wh>
+                </lesseq>
+            </and>
+        </if>
+        <else comment="false" x="452" y="685">
+            <group eventID="1" id="-1">
+                <set-dxy comment="false" x="463" y="705">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </set-dxy>
+                <if comment="false" x="463" y="732">
+                    <group eventID="1" id="-1">
+                        <set-xy comment="false" x="474" y="770">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-xy>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <int id="1" val="0"/>
+                    </less>
+                </if>
+                <else-if comment="false" x="463" y="809">
+                    <group eventID="1" id="-1">
+                        <set-xy comment="false" x="474" y="852">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </scene-wh>
+                                <get-wh comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-wh>
+                            </minus>
+                        </set-xy>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-wh comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="0"/>
+                            </get-wh>
+                        </plus>
+                        <scene-wh comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                    </more>
+                </else-if>
+            </group>
+        </else>
+    </group>
+    <group eventID="1" id="2">
+        <dolater comment="false" x="59" y="397">
+            <group eventID="1" id="-1"/>
+            <int id="0" val="0"/>
+            <ACTOR eid="this" id="2"/>
+        </dolater>
+        <continue comment="false" x="59" y="456"/>
+    </group>
+    <group eventID="1" id="3">
+        <dolater comment="false" x="38" y="181">
+            <group eventID="1" id="-1"/>
+            <int id="0" val="2"/>
+            <ACTOR eid="this" id="2"/>
+        </dolater>
+        <repeat comment="false" x="38" y="240">
+            <group eventID="1" id="-1"/>
+            <int id="0" val="5"/>
+        </repeat>
+        <dolater comment="false" x="38" y="297">
+            <group eventID="1" id="-1">
+                <set-dxy comment="false" x="49" y="324">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="12"/>
+                </set-dxy>
+                <scaleTo comment="false" x="49" y="351">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="100"/>
+                    <int id="2" val="100"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="0"/>
+                </scaleTo>
+            </group>
+            <int id="0" val="4"/>
+            <ACTOR eid="this" id="2"/>
+        </dolater>
+        <continue comment="false" x="38" y="390"/>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

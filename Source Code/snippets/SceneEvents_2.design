@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <dolater comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <display-dialog3 comment="false" x="37" y="67">
+                            <int id="0" val="Intro"/>
+                            <int id="1" val="Style"/>
+                        </display-dialog3>
+                        <set-val-13-2 comment="false" x="37" y="87">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-13-2>
+                    </group>
+                    <int id="0" val="1"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="1">
+        <pause-unpause comment="false" x="340" y="177">
+            <int id="0" val="0"/>
+        </pause-unpause>
+    </group>
+    <group eventID="1" id="2">
+        <set-val-13-2 comment="false" x="449" y="453">
+            <int id="0" val=""/>
+        </set-val-13-2>
+    </group>
+    <group eventID="1" id="3">
+        <display-dialog4 comment="false" x="197" y="396">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
+            <int id="2" val=""/>
+        </display-dialog4>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <set-val-13-2 comment="false" x="37" y="67">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-13-2>
+                    </group>
+                    <is-paused comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <control eid="12" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <pause-unpause comment="false" x="37" y="70">
+                            <int id="0" val="0"/>
+                        </pause-unpause>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-13-2 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="109">
+                    <group eventID="3" id="-1">
+                        <pause-unpause comment="false" x="37" y="129">
+                            <int id="0" val="1"/>
+                        </pause-unpause>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <display-dialog3 comment="false" x="26" y="42">
+                    <int id="0" val="Slime"/>
+                    <int id="1" val="Style"/>
+                </display-dialog3>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="1" id="1"/>
+            <ACTOR eid="2" id="2"/>
+        </event-actor-region>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="6" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <display-dialog3 comment="false" x="26" y="42">
+                    <int id="0" val="Hurt"/>
+                    <int id="1" val="Style"/>
+                </display-dialog3>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="2" id="1"/>
+            <ACTOR eid="2" id="2"/>
+        </event-actor-region>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <display-dialog3 comment="false" x="26" y="42">
+                    <int id="0" val="Heart"/>
+                    <int id="1" val="Style"/>
+                </display-dialog3>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="3" id="1"/>
+            <ACTOR eid="2" id="2"/>
+        </event-actor-region>
+    </group>
+    <group eventID="7" id="-1"/>
+</groups>
